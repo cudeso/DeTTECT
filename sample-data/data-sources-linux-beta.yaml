@@ -1,0 +1,595 @@
+version: 1
+file_type: data-source-administration
+name: linux-servers-example
+platform:
+  - Linux
+data_sources:
+  - data_source_name: Process monitoring
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/cron
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: File monitoring
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/audit/audit.log
+      - /var/log/cron
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Process command-line parameters
+    date_registered: null
+    date_connected: null
+    products:
+      - ~/.bash_history
+      - ~/.history
+      - /var/log/utmp
+      - /var/log/wtmp
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 2
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: API monitoring
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Process use of network
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Packet capture
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Authentication logs
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/auth.log
+      - /var/log/secure
+      - /var/log/faillog
+      - /var/log/sudo.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 4
+      timeliness: 4
+      consistency: 3
+      retention: 1
+  - data_source_name: Netflow/Enclave netflow
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Binary file metadata
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Network protocol analysis
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Loaded DLLs
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: System calls
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Malware reverse engineering
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: SSL/TLS inspection
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Anti-virus
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/vcap/sys/log/clamav/freshclam.log
+    available_for_data_analytics: false
+    comment: |
+      ClamAV logs are in Syslog.
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 3
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Network intrusion detection system
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/snort
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 4
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Data loss prevention
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Application logs
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/apt/term.log
+      - /var/log/apt/history.log
+      - /var/log/yum.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 1
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Email gateway
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/mail.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 3
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Network device logs
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/ufw.log
+      - /var/log/iptables.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 3
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Web proxy
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/squid/access.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 3
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Kernel drivers
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/boot.log
+      - /var/log/kern.log
+      - /var/log/dmesg
+      - /var/log/audit/audit.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 3
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: User interface
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Host network interface
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/kern.log
+      - /var/log/syslog
+      - /var/log/messages
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 2
+      timeliness: 3
+      consistency: 0
+      retention: 0
+  - data_source_name: Third-party application logs
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Services
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Web logs
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/apache2
+      - '/var/log/httpd '
+      - /var/log/nginx
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 4
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Detonation chamber
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Mail server
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/mail.log
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 3
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Environment variable
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: MBR
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: BIOS
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Web application firewall logs
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Asset management
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: DHCP
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/log/dhcpd.log
+    available_for_data_analytics: false
+    comment: 'At the time of writing: unknown data source within ATT&CK'
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 4
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: DNS records
+    date_registered: null
+    date_connected: null
+    products:
+      - /var/named/log/default
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 4
+      timeliness: 4
+      consistency: 0
+      retention: 0
+  - data_source_name: Browser extensions
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Digital certificate logs
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Disk forensics
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Component firmware
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: VBR
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Named Pipes
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: Sensor health and status
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: EFI
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: OAuth audit logs
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+  - data_source_name: PowerShell logs
+    date_registered: null
+    date_connected: null
+    products: []
+    available_for_data_analytics: false
+    comment: ''
+    data_quality:
+      device_completeness: 0
+      data_field_completeness: 0
+      timeliness: 0
+      consistency: 0
+      retention: 0
+exceptions:
+  - technique_id: null
+    name: null
